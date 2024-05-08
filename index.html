@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="project4.css">
+    <title>Project 4</title>
+</head>
+
+<body>
+    <div class="container">
+        <p class="special">P.S. your writing will be saved if the page gets reloaded!</p>
+
+        <h1>Writing Motivation <img src="images/happy.png" class="ico" alt=""><img src="images/dog.png" class="ico"
+                alt=""></h1>
+        <!-- dog icon source <a href="https://www.flaticon.com/free-icons/dog" title="dog icons">Dog icons created by Zlatko Najdenovski - Flaticon</a>
+             cat icon source <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Smashicons - Flaticon</a>-->
+        <p>Type words to generate a new cute animal picture AND a fun fact!</p>
+        <p>Select how many words and what type of cute animal.. Then go ahead and start typing</p>
+        <!-- cat/dog and total words form -->
+
+        <section>
+            <div>
+                <form name="options">
+                    <p>New picture of a
+                        <select name='catDog'>
+                            <option value="1">cat</option>
+                            <option value="2">dog</option>
+                        </select>
+                        every
+
+                        <select name="totalWords">
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="150">150</option>
+                            <option value="200">200</option>
+                        </select>
+                        words
+                    </p>
+                </form>
+                <textarea name="userWords" id="userWords" cols="46" rows="20"
+                    placeholder="enter your text here"></textarea>
+                <h5 id="currentCount">Current Word Count: <strong>0</strong></h5>
+
+            </div>
+            <figure>
+                <!-- placeholder img from AdobeStock -->
+                <img id="image" src="images/ay.jpeg" alt="cat and dog img here!">
+                <figcaption id="funFact">Fun fact and image will display here, get typing!</figcaption>
+            </figure>
+        </section>
+
+    </div>
+
+    <script src="project4.js"></script>
+</body>
+
+</html>
